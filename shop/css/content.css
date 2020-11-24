@@ -1,0 +1,39 @@
+.content a {
+  text-decoration: none;
+}
+
+.content a:hover {
+  color: red;
+}
+
+.gallery {
+  border: 1px solid #ccc;
+}
+
+.gallery:hover {
+  transform: scale(1,1);
+}
+
+.desc {
+  padding: 1px;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+.responsive {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0 6px;
+  float: left;
+  margin-bottom: 2em;
+  display: block;
+}

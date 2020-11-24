@@ -1,0 +1,91 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 30px;
+    margin: 5px;
+    text-align: center;
+    color: white;
+}
+#caculator {
+    width: 10em;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 28px;
+    height: 450px;
+    background-color: #262626;
+    border: 5px solid white;
+    border-radius: 5px;
+    padding: 3px;
+    display: block;
+}
+
+#calculator::before, ::after {
+    content: " ";
+    display: table;
+  }
+  
+#calculator::after {
+    clear: both;
+  }
+
+#viewer {
+    float: left;
+    text-align: right;
+    overflow: hidden;
+    height: 45px;
+    width: 98%;
+    line-height: 50px;
+    background-color: white;
+    padding-right: 5px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+}
+
+
+button {
+    border: 0;
+    background: white;
+    color: black;
+    cursor: pointer;
+    float: left;
+    font: inherit;
+    margin: 0.25em;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    border-radius: 5px;
+    transition: all 0.5s;
+} 
+
+button:hover {
+    background: #e6e6e6;
+  }
+  
+button:focus {
+    outline: 0;
+  }
+
+button::after {
+    animation: zoom 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both; 
+    content: attr(data-num);
+    cursor: default;
+    font-size: 100px;
+    position: absolute;
+         top: 1.5em;
+         left: 50%;
+         
+    text-align: center;
+    margin-left: -24px;
+    opacity: 0;
+    width: 48px;    
+} 
+
+#clear {
+    background-color: #e63900;
+    color: white;
+}

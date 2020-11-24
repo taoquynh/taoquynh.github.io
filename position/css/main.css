@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+#main-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 620px;
+    margin: auto;
+    background-image: url(../img/chopo-opa60.png)
+}
+
+a {
+    color: #e67300;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+#top-menu {
+    text-align: center;
+    height: 100px;
+    margin: auto;
+    padding-top: 10px;
+    border-bottom: 2px dashed #ff751a;
+}
+
+#top-menu h1 {
+    color: #e67300
+}
+
+#center-menu {
+    text-align: left;
+    height: 420px;
+    padding-top: 30px;
+    margin-top: 20px;
+    border-bottom: 2px dashed #ff751a;
+}
+
+.thanh-menu {
+    text-align: left;
+    height: 50px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    margin: 15px;
+    border: 1px solid sandybrown;
+    border-radius: 20px;
+    background-color: #ffd9b3;
+    opacity: 0.8;
+    filter: alpha(opacity=80)
+}
+
+.thanh-menu h4 {
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+#bottom-menu {
+    height: 100px;
+    text-align: left;
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+#content {
+    position: relative;
+    width: 80%;
+    min-height: 720px;
+    float: right;
+    background-color: #ffffe6;
+    border-left: 2px dashed #ff751a;
+}
+
+#content #avar {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px dashed #ff751a;
+    top: 36px;
+    left: -61px;
+}
+
+#top-content {
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+#top-content h1 {
+    text-align: center;
+}
+
+#center-content {
+    width: 60%;
+    min-height: 600px;
+    margin: auto;
+}
+
+#back-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+
+.responsive {
+    padding: 0 6px;
+    display: block;
+  }
+
+#footer {
+    width: 100%;
+    float: right;
+    background-color: #ffcc99;
+    color: black;
+    padding: 1em;
+    text-align: center;
+    max-width: 100%;
+    font-size: 20px;
+    border: 2px dashed #ff751a;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 50%;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+  }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

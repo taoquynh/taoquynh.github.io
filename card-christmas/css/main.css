@@ -1,0 +1,165 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    background-color: red;
+    background: -moz-linear-gradient(top, red, #fff);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #fff),color-stop(1, red));
+
+    -moz-box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+
+
+.top-left {
+    width: 20%;
+    height: 70px;
+    text-align: center;
+    margin: auto;
+    float: left;
+}
+
+.top {
+    width: 60%;
+    height: 70px;
+    text-align: center;
+    float: left;
+    margin: auto;
+}
+
+.top-right {
+    width: 20%;
+    height: 70px;
+    text-align: center;
+    float: left;
+    margin: auto;
+}
+
+.top img {
+    text-align: center;
+    margin: auto;
+}
+
+.top-right img {
+    text-align: center;
+    margin: auto;
+}
+
+/*tao hieu ung qua lac*/
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(10deg);}
+    50%{-webkit-transform: rotate(-10deg)}
+    100%{-webkit-transform: rotate(10deg);}
+}
+ 
+@keyframes swinging{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(-10deg)}
+    100%{transform: rotate(10deg);}
+}
+ 
+.swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
+h1 {
+    color: #FAFAFA;
+    font: bold 80px 'Comic Sans MS',Arial;
+    margin-top: 100px;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgba(214, 63, 63, 0.85), 4px 4px 0 #CFEAED;
+    text-transform: uppercase;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/* tạo hiệu ứng tuyết */
+.fall_snow {
+    background-image: url('../img/snow1.png'), url('../img/snow2.png'), url('../img/snow3.png');
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+     -webkit-animation: snow 10s linear infinite;
+     -moz-animation: snow 10s linear infinite;
+     -ms-animation: snow 10s linear infinite;
+     animation: snow 10s linear infinite;
+}
+@keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+.bottom_snow {
+    position: absolute;
+    z-index: 5;
+    top: 500px;
+    left: 50%;
+    margin-left: -500px;
+    width: 1000px;
+    height: 1000px;
+    background: #ffffe6;
+
+    border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    -webkit-border-radius: 1000px;
+}
+.bottom_snow:before , .bottom_snow:after {
+    background-color: #fff;
+    content: "";
+    height: 1000px;
+    position: absolute;
+    top: -25px;
+    width: 1000px;
+
+    border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    -webkit-border-radius: 1000px;
+}
+.bottom_snow:before {
+    left: 400px;
+}
+.bottom_snow:after {
+    right: 400px;
+}
+
+audio {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    z-index: 5;
+}

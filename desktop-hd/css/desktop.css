@@ -1,0 +1,326 @@
+.header {
+    width: 100%;
+    height: 30px;
+    background: brown;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    width: 85%;
+    height: auto;
+    margin: auto;
+}
+
+.content1 {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.content1-left {
+    width: 49.5%;
+    height: 60px;
+    background: #e6ccb3;
+    margin-right: 1%;
+    float: left;
+}
+
+.content1-right {
+    width: 49.5%;
+    height: 60px;
+    background: #e6ccb3;
+    float: left;
+}
+
+.content2 {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+
+.content2-1 {
+    width: 25%;
+    height: 120px;
+    background: #e6ccb3;
+    margin-right: 1%;
+    float: left;
+}
+
+.content2-2 {
+    width: 23.5%;
+    height: 120px;
+    margin-right: 1%;
+    float: left;
+}
+
+.content2-2-top {
+    width: 100%;
+    height: 46%;
+    background: #e6ccb3;
+    margin-bottom: 4%;
+}
+
+.content2-2-bottom {
+    width: 100%;
+    height: 46%;
+    margin-top: 4%;
+    background: #e6ccb3;
+}
+
+.content2-3 {
+    width: 23.5%;
+    height: 120px;
+    margin-right: 1%;
+    float: left;
+}
+
+.content2-3-top {
+    width: 100%;
+    height: 46%;
+    background: #e6ccb3;
+    margin-bottom: 4%;
+}
+
+.content2-3-bottom {
+    width: 100%;
+    height: 46%;
+    margin-top: 4%;
+    background: #e6ccb3;
+}
+
+.content2-4 {
+    width: 25%;
+    height: 120px;
+    background: #e6ccb3;
+    float: left;
+}
+
+.content-rong {
+    width: 25%;
+    height: 20px;
+    margin-bottom: 10px;
+    float: left;
+}
+.content3 {
+    width: 50%;
+    height: 20px;
+    margin-bottom: 10px;
+    background: #e6ccb3;
+    float: left;
+}
+.content4 {
+    clear: both;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.content4-1 {
+    width: 19%;
+    height: 100px;
+    margin-right: 1%;
+    background: #e6ccb3;
+    float: left;
+}
+
+.content4-2 {
+    width: 29.5%;
+    height: 100px;
+    margin-right: 0.5%;
+    background: #e6ccb3;
+    float: left;
+}
+
+.content4-3 {
+    width: 49.5%;
+    height: 100px;
+    margin-left: 0.5%;
+    background: #e6ccb3;
+    float: left;
+}
+
+.content5 {
+    width: 100%;
+    height: 800px;
+    margin-bottom: 10px;
+}
+
+.content5-1 {
+    width: 32.666667%;
+    height: 800px;
+    margin-right: 1%;
+    float: left;
+}
+
+.content5-1-top {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    background: #e6ccb3;
+}
+
+.content5-1-margin {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    background: #e6ccb3;
+}
+
+.content5-1-bottom {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    background: #e6ccb3;
+}
+
+.content5-2 {
+    width: 32.666662%;
+    height: 800px;
+    margin-right: 1%;
+    float: left;
+}
+
+.content5-2-top {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+    background: #e6ccb3;
+}
+
+.content5-2-bottom {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+    background: #e6ccb3;
+}
+
+.content5-3 {
+    width: 32.666661%;
+    height: 800px;
+    float: left;
+}
+
+.content5-3-top {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    background: #e6ccb3;
+}
+
+.content5-3-margin {
+    width: 100%;
+    height: 230px;
+    margin-bottom: 10px;
+    background: #e6ccb3;
+}
+
+.content5-3-bottom {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 10px;
+    background: #e6ccb3;
+}
+
+.footer {
+    width: 85%;
+    height: 300px;
+    margin: auto;
+}
+
+.footer-top {
+    width: 100%;
+    height: 100px;
+}
+
+.footer-top-1 {
+    width: 16.66666%;
+    height: 100px;
+    background: hotpink;
+    float: left;
+}
+
+.footer-top-2 {
+    width: 16.66666%;
+    height: 100px;
+    background: plum;
+    float: left;
+}
+
+.footer-top-3 {
+    width: 16.66666%;
+    height: 100px;
+    background: red;
+    float: left;
+}
+
+.footer-top-4 {
+    width: 16.66666%;
+    height: 100px;
+    background: greenyellow;
+    float: left;
+}
+
+.footer-top-5 {
+    width: 16.66666%;
+    height: 100px;
+    background: yellow;
+    float: left;
+}
+
+.footer-top-6 {
+    width: 16.66666%;
+    height: 100px;
+    background: hotpink;
+    float: left;
+}
+
+.footer-margin {
+    width: 100%;
+    height: 100px;
+}
+
+.footer-margin-1 {
+    width: 8.33333%;
+    height: 100px;
+    float: left;
+}
+
+.footer-margin-2 {
+    width: 16.66666%;
+    height: 100px;
+    background: gainsboro;
+    float: left;
+}
+
+.footer-margin-3 {
+    width: 16.66666%;
+    height: 100px;
+    float: left;
+}
+
+.footer-margin-4 {
+    width: 16.66666%;
+    height: 100px;
+    background: cadetblue;
+    float: left;
+}
+
+.footer-margin-5 {
+    width: 16.66666%;
+    height: 100px;
+    float: left;
+}
+
+.footer-margin-6 {
+    width: 16.66666%;
+    height: 100px;
+    background: purple;
+    float: left;
+}
+
+.footer-margin-7 {
+    width: 8.33333%;
+    height: 100px;
+    float: left;
+}

@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+header, footer {
+    width: 80%;
+    color: black;
+    background-color:cyan;
+    text-align: center;
+    padding: 1em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 5px 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: greenyellow;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: greenyellow;
+}

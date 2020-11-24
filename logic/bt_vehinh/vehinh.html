@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ve hinh</title>
+</head>
+<body>
+    
+    <script>
+        function printSquare(n) {
+            var str = ''
+
+            for (i = 0; i < n; i++) {
+                for (j = 0; j < n; j++) {
+                    str += '*  '
+                }
+                str += '<br>'
+            }
+            document.writeln(str)
+        }
+        document.writeln("In hình vuông đặc cạnh 5.<br>")
+        document.writeln("Bạn có thể vào console gọi hàm printSquare(n) với n là số tự nhiên bất kì lớn hơn 1.<br><br>")
+        printSquare(5)
+
+        function printTriangle(n) {
+            var str = ''
+
+            for (i = 0; i <= n; i++) {
+                for (j = 0; j <= n-i; j++) {
+                    str += ' '
+                }
+                for (j = 0; j <= i-1 ; j++) {
+                        str += '*  '
+                }
+                str += '<br>'
+            }
+            document.writeln(str)
+        }
+        document.writeln("In tam giác cân cạnh 5<br>")
+        document.writeln("Bạn có thể vào console gọi hàm printTriangle(n) với n là số tự nhiên bất kì lớn hơn 2.<br>")
+        printTriangle(5)
+
+        function printEmptyRectangle(a, b) {
+            var str = ''
+            for (i = 1; i <= b; i++){
+                str += ' *  '
+            }
+            
+            for (j = 1; j <= a-2; j++) {
+                str += '<br>' 
+                str += ' *  '
+                for (k = 1; k <= b-2; k++) {
+                    str += ' *  '.fontcolor('white');
+                }
+                str += ' *  '
+            }
+            str += '<br>'
+            for (f = 1; f <= b; f++) {
+                str += ' *  '
+            }
+            document.writeln(str)
+        }
+        document.writeln("In hình chữ nhật rỗng kích thước 5 x 7<br>")
+        document.writeln("Bạn có thể vào console gọi hàm printEmptyRectang(a, b) với a, b là số tự nhiên bất kì lớn hơn 3.<br><br>")
+        printEmptyRectangle(5, 7)
+
+        function printSpecialTriangle(h) {
+            var str = '';
+            for (i = h; i >= 1; i--) {
+                for (j = 2*h-1; j >=1; j--) {
+                    if ((j >= h-i+1) && (j <= h+i-1)) {
+                        str += ' *  '
+                    }
+                    else {
+                        str += ' *  '.fontcolor('white');
+                    }
+                }
+                str += '<br>'
+            }
+            document.writeln(str);
+        }
+        document.write("<br>")
+        document.write("In tam giác ngược có chiều cao là 4<br>")
+        document.writeln("Bạn có thể vào console gọi hàm printSpecialTriangle(h) với h là số tự nhiên bất kì lớn hơn 1.<br><br>")
+        printSpecialTriangle(4)
+    </script>
+</body>
+</html>

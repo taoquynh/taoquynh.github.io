@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Demo function</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        //Bài 1: Tính bình phương của một số
+        document.writeln("Bài1: Tính bình phương của một số. (Hàm được chạy trong console - Hãy nhập: bai1(x) với x là số bất kì nhập từ bàn phím.) <br> <br>")
+        function bai1(x) {
+            x = Math.pow(x, 2);
+            console.log(x)
+            
+        }
+
+        //bai2 - tinh binh phuong cua mot tong (3a + 2b - c)
+        document.writeln("Bài2: Tính bình phương của một tổng. (Hàm được chạy trong console - Hãy nhập: bai2(a, b, c) với a, b, c là số bất kì nhập từ bàn phím.) <br> <br>")
+        function bai2(a, b, c) {
+            x = 3*a + 2*b - c;
+            console.log(bai1(x))
+        }
+
+        //bai3 - Cắt chuỗi con từ một chuỗi dài hơn 30 kí tự.
+        document.writeln("Bài3: Cắt chuỗi và nối chuỗi <br> Hàm được chạy trong console - Hãy nhập: bai3(string) với string là một chuỗi bất kì nhập từ bàn phím dài hơn 30 kí tự <br> <br>")
+        function bai3(string) {
+          document.writeln(string.slice(0, 10) + "...")
+          console.log(string.slice(0, 10) + "...")
+                
+        }
+
+        //bai4 - viet hoa chu cai dau cua mot chuoi
+        document.writeln("Bài4: Viết hoa chữ cái đầu của một chuỗi <br> Hàm được chạy trong console - Hãy nhập: bai4(string) với string là một chuỗi bất kì nhập từ bàn phím có ít nhất một kí tự<br> <br>")
+        function bai4(string) {
+            console.log(string.charAt(0).toUpperCase() + string.slice(1))
+        }
+
+        //bai5 - tim min cua mot mang 
+        document.writeln("Bài5: Tìm số nhỏ nhất trong một mảng các số  <br> Hàm được chạy trong console - Hãy nhập: bai5(arr) với arr là một mảng các số bất kì nhập từ bàn phím. <br> <br>")
+        function bai5(arr) {
+            console.log(Math.min.apply(null, arr))
+        }
+
+        //bai6 - sap xep mang theo thu tu bang chu cai
+        document.writeln("Bài6: Sắp xếp tên học viên theo thứ tự bảng chữ cái  <br> Hàm được chạy trong console - Hãy nhập: bai6(arr) với arr là một mảng các string là tên của học viên bất kì nhập từ bàn phím. <br> <br>")
+        function bai6(arr) {
+            arr = arr.sort();
+            var len = arr.length;
+            for (arr_in = 0; arr_in < len; arr_in++) {
+                console.log(arr[arr_in]);
+            }
+        }
+
+        //bai7 - in ra man hinh cac thuoc tinh cua 3 doi tuong
+        document.writeln("Bài7: In ra màn hình các thuộc tính của 3 đối tượng<br> <br>")
+        var teacher = {
+            firstName: "Kim",
+            lastName: "Chi",
+            age: "22",
+            say: function() {}
+        }
+        
+        var student = {
+            firstName: "Nam",
+            lastName: "Cao",
+            age: "60",
+            say: function() {}
+        }
+
+        var parents = {
+            firstName: "Hoang",
+            lastName: "Ha",
+            age: "35",
+            say: function() {}
+        }
+
+        var aboutMe = function(){
+            document.writeln("Xin chào, tôi là " + this.firstName + " " + this.lastName + ". Năm nay tôi " + this.age + " tuổi." + "<br>")
+        }
+
+        teacher.say = aboutMe;
+        teacher.say();
+        student.say = aboutMe;
+        student.say();
+        parents.say = aboutMe;
+        parents.say();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

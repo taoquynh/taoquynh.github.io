@@ -1,0 +1,25 @@
+#container {
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    border: 5px solid rgba(255, 102, 0, 0.507);
+    font-family: fantasy;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#button {
+    width: 60%;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+}
+
+p {
+    text-indent: 25px;
+    text-align: justify;
+}

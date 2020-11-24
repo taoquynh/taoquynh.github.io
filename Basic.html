@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Một website cơ bản</title>
+    <style>
+        div.container {
+            width: 100%;
+            border: 1px solid gray;
+        }
+        
+        header, footer {
+            padding: 1em;
+            color: white;
+            background-color:black;
+            clear: left;
+            text-align: center;
+        }
+        
+        nav {
+            float: left;
+            max-width: 160px;
+            margin: 0;
+            padding: 1em;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+            
+        nav ul a {
+            text-decoration: none;
+        }
+        
+        article {
+            margin-left: 170px;
+            border-left: 1px solid gray;
+            padding: 1em;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <header>
+            <h1>Website</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href=#>Trang chủ</a></li>
+                <li><a href="#">Lập trình web</a></li>
+                <li><a href="#">Thiết kế web</a></li>
+                <li><a href="https://techmaster.vn/">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Trang chủ</h1>
+            <p> Đây là website cơ bản! </p>
+        </article>
+        <footer>
+            Copyright &copy; 2018 Website.com
+        </footer>
+    </div>
+</body>
+</html>

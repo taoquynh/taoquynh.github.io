@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/quiz.css" />
+</head>
+
+<body>
+    <div id="first">
+        <div id="quiz-name" class="quiz-name">Bạn hiểu đất nước Việt Nam đến đâu?</div>
+        <button id="start" class="start" onclick="start()"><b>START</b></button>
+    </div>
+
+    <div id="quizContainer" class="container" style="display: none;">
+        <div class="title">Bạn hiểu đất nước Việt Nam đến đâu?</div>
+        <div id="question" class="question"></div>
+        <label class="option"><input type="radio" name="option" value="1" /><span id="opt1"></span></label>
+        <label class="option"><input type="radio" name="option" value="2" /><span id="opt2"></span></label>
+        <label class="option"><input type="radio" name="option" value="3" /><span id="opt3"></span></label>
+        <label class="option"><input type="radio" name="option" value="4" /><span id="opt4"></span></label>
+        <button id="nextButton" class="next-btn" onclick="loadNextQuestion();"><b>Next Question</b></button>
+    </div>
+    <div id="result" class="container result" style="display: none;"></div>
+    <button id="replay" class="reset-btn" onclick="reset()" style="display: none;"><b> REPLAY </b></button>
+    <canvas id="canvas" style="display: none;" onload="phaohoa()"></canvas>
+
+    <script src="js/quiz-question.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/firework.js"></script>
+</body>
+
+</html>

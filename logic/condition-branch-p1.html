@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Condition-branch</title>
+    <script>
+
+        document.writeln("Bài 1: Kiểm tra 2 số và tìm số lớn nhất </br>")
+        document.writeln("(Hàm được chạy trong console - Hãy nhập: ktNumber(a, b) với a,b là 2 số nhập từ bàn phím.)</br></br>")
+        function ktNumber(a, b) {
+            if (isNaN(a) || isNaN(b)) {
+                console.log("Bạn chắc chắn đang nhập số? Hãy thử lại!")
+            }
+            else {
+                if (a < b) {
+                    console.log("Số bạn nhập lớn hơn là " + b)
+                }
+                else if (a > b) {
+                        console.log("Số bạn nhập lớn hơn là " + a)
+                    }
+                else {
+                        console.log("Hai số bạn nhập thì bằng nhau")
+                }
+            }
+        }
+
+        document.writeln("Bài 2: Tính giai thừa </br>")
+        document.writeln("(Hàm được chạy trong console - Hãy nhập: giaithua(n) với n là số nhập từ bàn phím.)</br></br>")
+        function giaithua(n) {
+            if (isNaN(n)) {
+                console.log("Bạn chắc chắn đang nhập số? Hãy thử lại!")
+            }
+            else {
+                if (n < 0) {
+                    console.log("Giai thừa của số âm không tồn tại. Bạn hãy nhập lại số không phải số âm nhé!")
+                }
+                else if (n == 0 || n == 1) {
+                    return 1
+                }
+                else {
+                    gt = 1;
+                    while (n>1) {
+                        gt = gt*n;
+                        n--;
+                    }
+                    console.log(gt)
+                }
+            }
+        }
+
+        document.writeln("Bài 3: Lấy ra một mảng các số chẵn từ mảng ban đầu và sắp xếp giảm dần</br>")
+        document.writeln("(Hàm được chạy trong console - Hãy nhập: arr_sochan(arrNUm) với arrNum là một mảng các số nhập từ bàn phím.)</br></br>")
+        function arr_sochan(arrNum) {
+            var arr = [];
+                    for(i = 0; i < arrNum.length; i++) {
+                        if (arrNum[i] % 2 == 0) {
+                            arr.push(arrNum[i])
+                        }
+                    }
+                    
+                    var temp;
+                    for (i = 0; i < arr.length-1; i++) {
+                        for (j = i+1; j < arr.length; j++) {
+                            if (arr[i] < arr[j]) {
+                                temp = arr[j];
+                                arr[j] = arr[i];
+                                arr[i] = temp;
+                            }
+                        }
+                    }
+            console.log(arr)
+        }
+        document.writeln("Bài 4: kiểm tra tính hợp lệ của người dùng nhập vào</br></br>")
+        function validate() {
+            var username = document.getElementById("usernameID").value.length;
+            var password = document.getElementById("password").value.length;
+            if (username == 0 || password == 0) {
+                alert("Username và password không được để trống. Hãy nhập lại!");
+            }
+            else if (username > 20 || password < 6 || password > 32) {
+                alert("Username không vượt quá 20 kí tự. Password từ 6 đến 32 kí tự. Hãy nhập lại!");
+            }
+            else {
+                alert("Log In thành công!")
+            }
+        }
+
+    </script>
+</head>
+<body>
+    Username: <input type="text" id="usernameID" name="username"/>
+    <br>
+    <br>
+    Password: <input type="password" id="password" name="password"/>
+    <br><br>
+    <input type="button" value="Log In" onclick="validate();" name="anything" id="anythingID"/>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vòng lặp</title>
+    <script>
+    
+        document.writeln("Bài 1: Tính n! </br>")
+        document.writeln("(Hàm được chạy trong console - Hãy nhập: giaithua(n) với n là số nguyên không âm bất kì nhập từ bàn phím.)</br></br>")
+        function giaithua(n) {
+            gt = 1;
+            if (n==0 || n==1) {
+                return 1;
+            }
+            while (n>1) {
+                gt = gt*n;
+                n--;
+            }
+            console.log(gt)
+        }
+        
+
+        document.writeln("Bài 2: Đảo một chuỗi được nhập từ bàn phím</br>")
+        document.writeln("(Hàm được chạy trong console - Hãy nhập: daochuoi(str) với str là một chuỗi bất kì nhập từ bàn phím.)</br></br>")
+        function daochuoi(str) {
+            var arr = [];
+            for (var i = str.length - 1, j = 0; i >= 0; i--, j++) {
+                arr[j] = str[i];
+            }
+            return arr.join('');
+            console.log(arr.join)
+        }
+
+        document.writeln("Bài 3: lặp một chuỗi 10 lần và nỗi với nhau thành một chuỗi mới</br>")
+        document.writeln("(Hàm được chạy trong console - Hãy nhập: duplicate(str) với str là một chuỗi bất kì nhập từ bàn phím.)</br></br>")
+        function duplicate(str) {
+            arr = [str];
+            for(i=1; i<10; i++) {
+                arr[i] = str;
+            }
+            return arr.join('-')
+            console.log(arr.join('-'))
+        }
+
+        document.writeln("Bài 4: Sắp xếp mảng học sinh theo bảng chữ cái và in vị trí</br>")
+        document.writeln("(Hàm được chạy trong console - Hãy nhập: sapxep(arrStu) với arrStu là một mảng các học sinh nhập từ bàn phím.)</br></br>")
+        function sapxep(arrStu) {
+            arrStu = arrStu.sort();
+            var length = arrStu.length;
+            for (index = 0; index < length; index++) {
+                console.log("Học sinh thứ " + index + " là:" + arrStu[index]);
+            }
+        }
+
+        document.writeln("Bài 5: Nhân đôi các phần tử trong mảng</br>")
+        document.writeln("(Hàm được chạy trong console - Hãy nhập: bai5(arrNum) với arrNum là một mảng các số nhập từ bàn phím.)</br></br>")
+        function bai5(arrNum) {
+            arr = [arrNum];
+            for(i=0; i < arrNum.length; i++) {
+                arr[i] = arrNum[i]*2;
+            }
+            return arr;
+            console.log(arr);
+        }
+
+        document.writeln("Bài 6: Tạo mảng mới là số dư của mảng ban đầu chia 2</br>")
+        document.writeln("(Hàm được chạy trong console - Hãy nhập: surplus(arrNum) với arrNum là một mảng các số nhập từ bàn phím.)</br></br>")
+        function surplus(arrNum) {
+            arr = [arrNum];
+            for(i=0; i < arrNum.length; i++) {
+                arr[i] = arrNum[i]%2;
+            }
+            return arr;
+            console.log(arr);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+body {
+    width: 50%;
+    border: 1px solid gray;
+    margin: auto;
+    padding-top: 5em;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 5em;
+    overflow: visible;
+    background-color: white;
+}
+#quochieu1 {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1px;
+}
+#quochieu2 {
+    text-align: center;
+
+}
+.tieude1 {
+    text-align: center;
+
+}
+.vanban {
+    text-align: left;
+}
+.sign {
+    margin-right: 50px;
+    margin-left: 400px;
+    text-align: center;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <script>
+        document.writeln(("Bài 1: In ra màn hình ngày tháng năm hiện tại, xác định mùa <br> <br>"))
+        var now = new Date();   
+        var date = now.getDate();   
+        var month = now.getMonth() + 1;   
+        var year = now.getFullYear();   
+        document.writeln("Bây giờ là " + now + "</br>");
+        document.writeln("Hôm nay là ngày " + date + " tháng " + month + " năm " + year + "<br>");
+        if (month >=1 && month <=3) {
+            document.writeln("Tháng " + month + " là mùa xuân <br> <br>");
+        }
+        else if (month >=4 && month <=6) {
+            document.writeln("Tháng " + month + " là mùa hè <br> <br>");
+        }
+        else if (month >=7 && month <=9) {
+            document.writeln("Tháng " + month + " là mùa thu <br> <br>");
+        }
+        else {
+            document.writeln("Tháng " + month + " là mùa đông <br> <br>");
+        }
+
+        document.writeln("Bài 2: In ra chuỗi (10 kí tự + ...)<br>")
+        document.writeln("Hàm này được chạy trong console. Gọi đến hàm String(str) với str là một cuỗi được nhập từ bàn phím <br> <br>")
+        function String(str) {
+
+            if (typeof(str) == "string") {
+                    if (str.length <= 10) {
+                    console.log(str)
+                    }
+                    else {
+                        var newStr = str.substring(0, 10)
+                        console.log(newStr + "...")
+                    }
+            }
+
+            else {
+                str = str.toString();
+                if (str.length <= 10) {
+                    console.log(str)
+                    }
+                else {
+                        var newStr = str.substring(0, 10)
+                        console.log(newStr + "...")
+                }
+            }
+        }
+
+        document.writeln("Bài 3: In ra điểm chữ <br>")
+        document.writeln("Hàm này được chạy trong console. Gọi đến hàm diemso(x) với x là số điểm nhập từ bàn phím (0 <= x <=10) <br> <br>")
+        function diemso(x) {
+            if (x >= 0 && x <= 10) {
+                if (x < 3.9) {
+                    console.log("Bạn đạt điểm F")
+                }
+                else if (x >= 4 && x <= 5.4) {
+                    console.log("Bạn đạt điểm D")
+                }
+                else if (x >= 5.5 && x <= 6.9) {
+                    console.log("Bạn đạt điểm C")
+                }
+                else if (x >= 7 && x <= 8.4) {
+                    console.log("Bạn đạt điểm B")
+                }
+                else {
+                    console.log("Bạn đạt điểm A")
+                }
+            }
+            else {
+                console.log("Bạn hãy nhập lại điểm, điểm từ 0 - 10.")
+            }
+        }
+
+        document.writeln("Bài 4: translate() <br>")
+        document.writeln("Hàm này được chạy trong console. Gọi đến hàm translate_hello()<br> <br>")
+        function translate_hello() {
+            var country = prompt("Nhập tên đất nước bạn muốn biết về lời chào ở nuớc họ: French, Hawaiian, Germany, Italy, Croatia. Nếu không nhập gì chúng tôi có thể cho rằng bạn muốn nói biết ở Việt Nam.");
+            switch (country) {
+                case 'French':
+                    document.writeln("Đây là lời chào từ nước Pháp: Bonjour");
+                    break;
+                case 'Hawaiian':
+                    console.log("Aloha");
+                    break;
+                case 'Germany':
+                    console.log("Hallo");
+                    break;
+                case 'Italy':
+                    console.log("Ciao");
+                    break;
+                case 'Croatia':
+                    console.log("Bok");
+                    break;
+                default:
+                    console.log("Xin chào")
+            }
+        }
+
+        document.writeln("Bài 5: Find true <br>")
+        document.writeln("Hàm này được chạy trong console. Gọi đến hàm find_true(arr) với arr là một mảng các phần tử true, false nhập từ bàn phím <br> <br>")
+        function find_true(arr) {
+            var pos = arr.indexOf('true');
+            pos = pos + 1;
+            console.log("True xuất hiện lần đầu ở vị trí thứ " + pos)
+        }
+
+        document.writeln("Bài 6: In Number <br>")
+        document.writeln("Hàm này được chạy trong console. Gọi đến hàm InNumber(n) với n là số tự nhiên được nhập từ bạn phím <br> <br>")
+        function InNumber(n){
+            for(var i = 0;i<=n;){
+                while(i%2 == 0){
+                document.write("<p style = 'color: red; display:inline'>"+i+"</p>" + "<br/>");
+                    i++;
+                }
+                while(i%2 == 1){
+                    document.write("<p style = 'color: blue; display:inline'>"+i+"</p>" + "<br/>");
+                    i++;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

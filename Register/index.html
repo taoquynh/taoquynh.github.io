@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+
+<body>
+    <div class="login">
+        <div class="form">
+            <form id="registerform" method="post" action="#">
+                <div class="formrow">
+                    <label for="username">Username</label>
+                    <input data-progression="" type="text" name="username" id="username" class="basetxt" tabindex="1"
+                        data-helper="Any name with at least 6 characters.">
+                    <p class="errmsg">Please add some more characters</p>
+                </div>
+
+                <div class="formrow">
+                    <label for="email">Email Address</label>
+                    <input data-progression="" type="email" name="email" id="email" class="basetxt" tabindex="2"
+                        data-helper="Where do we send your verification email?">
+                    <p class="errmsg">Please enter a proper e-mail</p>
+                </div>
+
+                <div class="formrow">
+                    <label for="password1">Password</label>
+                    <input data-progression="" type="password" name="password1" id="password1" class="basetxt" tabindex="3"
+                        data-helper="Make sure you can remember it!">
+                </div>
+
+                <div class="formrow">
+                    <label for="password2">Password(again)</label>
+                    <input data-progression="" type="password" name="password2" id="password2" class="basetxt" tabindex="4"
+                        data-helper="Please re-enter the password again.">
+                    <p class="errmsg">Passwords do not match!</p>
+                </div>
+
+                <input type="submit" id="submitformbtn" class="submitbtn" value="Sign Up">
+            </form>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

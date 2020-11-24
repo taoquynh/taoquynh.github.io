@@ -1,0 +1,115 @@
+/** page structure **/
+#w {
+    display: block;
+    width: 750px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+   
+  #content {
+    display: block;
+    width: 100%;
+    background: #fff;
+    padding: 25px 20px;
+    padding-bottom: 35px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  }
+   
+  p.errmsg {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 7px;
+    margin-top: 5px;
+    color: #a54d4d;
+    display: none;
+  }
+   
+  /** custom form elements **/
+  #registerform {
+    display: block;
+    width: 512px;
+  }
+   
+  .formrow {
+    display: block;
+    margin-bottom: 30px;
+  }
+   
+  label {
+    display: block;
+    float: left;
+    margin-top: 12px;
+    width: 160px;
+    color: #444;
+    font-size: 20px;
+    padding: 0 0;
+  }
+   
+  .basetxt {
+    width: 340px;
+    border: 2px solid #dcdcdc;
+    border-radius: 7px;
+    font-size: 2.0em;
+    padding: 9px;
+    color: #676767;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  .basetxt:focus {
+    outline: none;
+    color: #414141;
+    border-color: #9ecaed;
+    box-shadow: 0 0 11px #9ecaed;
+  }
+
+  .submitbtn {
+    width: 120px;
+    text-align: center;
+    cursor: pointer;
+    color: #63532d;
+    font-size: 1.4em;
+    line-height: 29px;
+    border: 1px solid #cba957;
+    background: #f3d078;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#f7dfa5),color-stop(100%,#f0c14b));
+    background: -webkit-linear-gradient(top,#f7dfa5,#f0c14b);
+    background: -moz-linear-gradient(top,#f7dfa5,#f0c14b);
+    background: -o-linear-gradient(top,#f7dfa5,#f0c14b);
+    background: linear-gradient(top,#f7dfa5,#f0c14b);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+  .submitbtn:hover {
+    background: #f1c860;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#f5d78e),color-stop(100%,#eeb933));
+    background: -webkit-linear-gradient(top,#f5d78e,#eeb933);
+    background: -moz-linear-gradient(top,#f5d78e,#eeb933);
+    background: -o-linear-gradient(top,#f5d78e,#eeb933);
+    background: linear-gradient(top,#f5d78e,#eeb933);
+  }
+  .submitbtn:active {
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.35) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.35) inset;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.35) inset;
+    background-color: #f0c14b;
+  }
+   
+  .syco_tooltip {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 2px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 2px 2px rgba(0,0,0,0.3);
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.3);
+  }
+  .syco_tooltip p {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  }
+  

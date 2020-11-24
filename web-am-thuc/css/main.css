@@ -1,0 +1,315 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #333;
+}
+
+#container {
+    width: 100%;
+    margin: auto;
+    background-color: greenyellow;
+    background: -moz-linear-gradient(top, greenyellow, #fff);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #fff),color-stop(1, greenyellow));
+
+}
+
+.main-content {
+    width: 90%;
+    margin: auto;
+}
+
+/*==MENU==*/
+#menu {
+    background-color: greenyellow;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, greenyellow, #e6ffe6, greenyellow);
+}
+
+#menu ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#menu ul li {
+    color: #008000;
+    display: inline-table;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+
+#menu ul li a {
+    color: #008000;
+    text-decoration: none;
+    display: block;
+}
+
+#menu ul li a:hover {
+    background: greenyellow;
+    color: #008000;
+}
+
+#menu ul li > .sub-menu {
+    display: none;
+    position: absolute;
+}
+
+#menu ul li:hover .sub-menu {
+    display: block;
+    background: #e6ffe6;
+    color: #008000;
+}
+
+/*==TITLE==*/
+
+#title {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/*==CONTENT==*/
+
+.content {
+    width: 100%;
+    margin-top: 20px;
+    background: palegoldenrod;
+    display: block;
+}
+
+.content #img-left {
+    width: 30%;
+    height: 300px;
+    float: left;
+    text-align: center;
+    padding: auto;
+    margin-top: 10px;
+    display: block;
+}
+
+.content #img-left:hover {
+    opacity: 0.9;
+}
+
+.content #img-center {
+    width: 40%;
+    height: 300px;
+    text-align: center;
+    float: left;
+    display: block;
+}
+
+.content #img-center:hover {
+    opacity: 0.9;
+}
+
+.content #img-right {
+    width: 30%;
+    height: 300px;
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+}
+
+.content #img-right:hover {
+    opacity: 0.9;
+}
+
+.bottom-content {
+    width: 100%;
+    height: 1500px;
+    margin: auto;
+}
+
+.bottom-left {
+    width: 18%;
+    height: 400px;
+    float: left;
+    
+    background-color: greenyellow;
+    background: -moz-linear-gradient(top, greenyellow, #fff);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #fff),color-stop(1, greenyellow));
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.bottom-left ul > li {
+    list-style-position: inside;
+    list-style-type: circle;
+
+
+}
+
+.bottom-left ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.bottom-left a:hover {
+    color: red;
+}
+
+.bottom-right {
+    width: 80%;
+    float: right;
+    padding-left: 20px;
+}
+
+.description {
+    width: 100%;
+}
+
+.des-img {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.des-text {
+    width: 50%;
+    float: left;
+    text-align: justify;
+}
+
+#div2 {
+    margin-top: 10px;
+}
+
+.div2-left {
+    width: 80%;
+    float: left;
+}
+
+.thanh-tieu-de {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: greenyellow;
+    background: -moz-linear-gradient(top, greenyellow, #fff);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #fff),color-stop(1, greenyellow));
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.thanh-noi-dung {
+    padding: 5px;
+}
+
+#thanh-img {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#thanh-img img {
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+}
+
+#mon-chinh {
+    width: 24%;
+    float: right;
+}
+
+#mon-chinh {
+    list-style-position: inside;
+}
+
+#mon-phu {
+    width: 24%;
+    float: right;
+}
+
+#mon-phu ul li {
+    list-style-position: inside;
+}
+
+.div2-right {
+    width: 19%;
+    float: right;
+}
+
+.div2-right ul li {
+    list-style-position: inside;
+}
+
+.thanh-noi-dung a {
+    text-decoration: none;
+    color: #333;
+}
+
+.thanh-noi-dung a:hover {
+    color: red;
+}
+
+.footer {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #fff;
+    background: -moz-linear-gradient(top, #fff, greenyellow);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, greenyellow),color-stop(1, #fff));
+    border-radius: 10px;
+}
+
+.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  .gallery:hover {
+    border: 1px solid #777;
+  }
+  .gallery img {
+    width: 100%;
+  }
+  
+  .gallery a:link,:visited,:active {
+    text-decoration: none;
+    color: black;
+  }
+
+  .desc {
+    padding: 15px;
+    text-align: center;
+    background-color: aliceblue;
+  }
+
+.img-responsive {
+    max-width: 100%;
+    height: 250px;
+    margin: auto;
+    line-height: 250px;
+    text-align: center;
+    display: block;
+  }
+
+.img-responsive-2 {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 50%;
+    margin-bottom: 2em;
+    display: block;
+  }
+  
+
+
