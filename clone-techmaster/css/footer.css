@@ -1,0 +1,32 @@
+footer {
+    background-color: #464646;
+    padding: 80px;
+    display: flex;
+    flex-direction: row;
+    line-height: 2.5;
+    color: #919294;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+.ul-4 {
+    width: 25%;
+}
+
+footer .ul-4 li {
+    list-style-type: none;
+}
+
+.title {
+    font-size: 20px;
+    color: white;
+}
+
+.icon-about {
+    font-size: 32px;
+    margin: 10px;
+}
+
+.li-title {
+    margin-bottom: 10px;
+}
