@@ -44,15 +44,15 @@ header {
     margin: 0 20px;
 }
 
-.sub-menu {
+.menu-list {
     display: flex;
 }
 
-.sub-menu li {
+.menu-list li {
     list-style-type: none;
 }
 
-.sub-menu li a {
+.menu-list li a {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
@@ -62,4 +62,32 @@ header {
 .caret {
     margin-left: 5px;
     font-size: 18px;
+}
+
+/* css menu đa cấp */
+.menu-list {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    padding-top: 10px;
+    display: none;
+}
+
+.sub-menu li {
+    background-color: teal;
+    padding: 10px 15px;
+}
+
+.sub-menu li a {
+    margin: 0px;
+}
+
+.menu-list li:hover .sub-menu {
+    display: block;
+}
+
+.menu-list li a:hover {
+    color: red;
 }

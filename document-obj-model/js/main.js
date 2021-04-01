@@ -17,7 +17,7 @@ function decreaseFontSize() {
 
     var pID = prompt("Please enter the paragraph ID you want to display. (ID: p1, p2, p3)", "p1")
     txt = document.getElementById(pID);
-    style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+    style = window.getComputedStyle(txt).getPropertyValue('font-size');
     currentSize = parseFloat(style);
     txt.style.fontSize = (currentSize - 1) + 'px';    
 }

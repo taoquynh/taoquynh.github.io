@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -11,3 +15,30 @@ body {
 .shadow {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18);
 }
+
+/* messenger */
+.messenger {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(0, 132, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.arrow-up {
+    bottom: 100px;
+    right: 20px;
+    background-color: green;
+}
+
+.icon-messenger {
+    color: white;
+    font-size: 40px;
+}
+
