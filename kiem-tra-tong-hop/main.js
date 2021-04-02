@@ -132,7 +132,7 @@ function ocSen(h, x, y) {
     doCaoConLai = doCaoConLai - (x - y);
   } while (x < doCaoConLai);
 
-  return `Ốc sên cần ${dem} ngày để leo ra khỏi miệng giếng`;
+  return `Ốc sên cần ${dem+1} ngày để leo ra khỏi miệng giếng`;
 }
 
 console.log("4. ",ocSen(20, 5, 2));
